@@ -37,3 +37,5 @@ jobs:
 
       - name: Run tests
         run: pytest --cov=src --cov-report=term-missing --cov-fail-under=80
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
